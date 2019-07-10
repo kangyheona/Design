@@ -1,0 +1,335 @@
+@charset "utf-8";
+/* *******************************************************
+ * filename : layout.css
+ * description : 전체 레이아웃 CSS
+ * date : 2017-05-30
+******************************************************** */
+
+@import url("./font.css");
+/* 나눔고딕 & 본고딕 */
+@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
+/* 나눔바른고딕 */
+
+/* layout */
+body,
+table,
+th,
+td,
+button,
+select,
+input {
+    font-family: 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum Gothic", "돋움", Dotum, Arial, sans-serif;
+    font-size: 13px;
+    color: #666;
+}
+
+ul,
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+body {
+    background-color: #fff;
+}
+
+#wrap {
+    width: 100%;
+    min-width: 1200px;
+    position: relative;
+}
+
+/* min-width 홈페이지 컨텐츠 가로값에 맞게 변경 */
+
+/* ****************** 공통클래스 ********************** */
+.area {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+/* width 홈페이지 컨텐츠 가로값에 맞게 변경 */
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.blind {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0
+}
+
+.text-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.trans200 {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s
+}
+
+.trans300 {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+.trans400 {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    transition: all 0.4s
+}
+
+.trans500 {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s
+}
+
+.material-icons {
+    line-height: initial;
+    color: inherit;
+}
+
+.font-barun {
+    font-family: "Nanum Barun Gothic", sans-serif;
+}
+
+.noto-sans {
+    font-family: 'Noto Sans KR', "나눔고딕", NanumGothic, "Nanum Gothic", "돋움", Dotum, Arial, sans-serif;
+}
+
+/* ****************** HEADER ********************** */
+#header {
+    position: relative;
+    width: 100%;
+    height: 170px;
+}
+
+#headerWrap {
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+
+#headerInner {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    /*background-color:#fff;*/
+}
+
+#headerInner .header-inner {
+    position: relative;
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 17px;
+    left: 0;
+    z-index: 999;
+}
+
+.topmenu {
+    float: right
+}
+
+.topmenu li {
+    float: left
+}
+
+/* -------- Header :: fixed -------- */
+#headerWrap.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    animation: HeaderFixed 0.5s;
+    /*background:#fff url(/images/layout/header_fixed_bg.jpg) repeat-x left bottom;*/
+    background-color: #fff;
+}
+
+#headerWrap.fixed #headerInner {
+    background: #fff url(/images/layout/header_fixed_bg.jpg) repeat-x left bottom;
+}
+
+@-webkit-keyframes HeaderFixed {
+    from {
+        top: -100px
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes HeaderFixed {
+    from {
+        top: -100px
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+
+
+/* ****************** GNB ********************** */
+/* gnb 배경 */
+#gnbBg {
+    position: absolute;
+    top: 69px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+    z-index: 998;
+    -webkit-transition: height 300ms ease-in-out;
+    -moz-transition: height 300ms ease-in-out;
+    -ms-transition: height 300ms ease-in-out;
+    -o-transition: height 300ms ease-in-out;
+    transition: height 300ms ease-in-out;
+    border-top: 1px solid #ebebeb;
+}
+
+#gnbBg.open {
+    height: 180px;
+}
+
+#gnb {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid #ccc
+}
+
+#gnb > ul.clearfix {
+    text-align: center;
+}
+
+#gnb > ul.clearfix > li {
+    position: relative;
+    float: left;
+    width: 25%
+}
+
+#gnb > ul.clearfix > li > a {
+    display: block;
+    font-size: 18.5px;
+    line-height: 70px;
+    color: #0e0e0e;
+    letter-spacing: -0.45px;
+}
+
+#gnb .gnb-2dep {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 87%;
+    height: 0;
+    overflow: hidden;
+    text-align: left;
+    z-index: 999;
+    -webkit-transition: height 300ms ease-in-out;
+    -moz-transition: height 300ms ease-in-out;
+    -ms-transition: height 300ms ease-in-out;
+    -o-transition: height 300ms ease-in-out;
+    transition: height 300ms ease-in-out;
+}
+
+#gnb .gnb-2dep.open {
+    height: 180px;
+}
+
+/*#gnb .gnb-2dep > li{padding-left:18px;}*/
+#gnb .gnb-2dep > li:first-child {
+    margin-top: 9px;
+}
+
+#gnb .gnb-2dep > li a {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 35px;
+    color: #343434;
+    color: rgba(52, 52, 52, 0.87);
+    letter-spacing: -0.3px;
+    text-align: center;
+}
+
+#gnb .gnb-2dep > li:hover a {
+    color: #020202;
+    color: rgba(2, 2, 2, 0.87);
+}
+
+#gnb .gnb-2dep > li a:after {
+    position: absolute;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    display: block;
+    content: "";
+    background-color: #e6e6e6;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#gnb .gnb-2dep > li:hover a:after {
+    background-color: #868686;
+    width: 100%;
+    left: 0;
+}
+
+#gnb > ul.clearfix > li:hover > a,
+#gnb > ul.clearfix > li:hover .gnb-2dep {
+    background-color: #e6e6e6;
+}
+
+#gnb > ul.clearfix > li.gnb1:hover > a,
+#gnb > ul.clearfix > li.gnb4:hover > a {
+    background-color: #bd2329;
+    color: #fff;
+}
+
+#gnb > ul.clearfix > li.gnb2:hover > a,
+#gnb > ul.clearfix > li.gnb5:hover > a {
+    background-color: #f8ae19;
+    color: #fff;
+}
+
+#gnb > ul.clearfix > li.gnb3:hover > a,
+#gnb > ul.clearfix > li.gnb6:hover > a {
+    background-color: #105ca9;
+    color: #fff;
+}

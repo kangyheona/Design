@@ -1,0 +1,76 @@
+/* sub */
+#sub_container {clear:both; margin:0; padding:0; }
+
+#sub_container .container {padding:0}
+#containerTop{height:200px;text-align:center;color:#fff;}
+#containerTop b{display:inline-block;padding:50px 0 10px;font-size:2.2em;}
+#containerTop p{font-size:1.1em;word-break:keep-all;}
+#containerTop.bg1{background:url('../images/s_visual_01.jpg') no-repeat center top !important;background-size:auto 100%;}
+#containerTop.bg2{background:url('../images/s_visual_01.jpg') no-repeat center top !important;background-size:auto 100%;}
+#containerTop.bg3{background:url('../images/s_visual_01.jpg') no-repeat center top !important;background-size:auto 100%;}
+#containerTop.bg4{background:url('../images/s_visual_01.jpg') no-repeat center top !important;background-size:auto 100%;}
+#containerTop.bg5{background:url('../images/s_visual_01.jpg') no-repeat center top !important;background-size:auto 100%;}
+
+#containerNav{margin-top:-41px;min-height:40px;text-align:left;font-size:0.9em;background:url('../images/bg_location_wrap.png') repeat left top !important;}
+/*#containerNav .inner{background:url(/images/kosa/common/bg_containerNav.png) repeat 0 0;}*/
+#containerNav .navLeft{float:left; margin:0; padding:0}
+#containerNav .navLeft > li{position:relative;float:left;min-width:200px;border-right:1px solid rgba(255,255,255,.5);}
+#containerNav .navLeft > li > a{display:block;padding:0 30px 0 10px;line-height:40px;font-size:1em;color:#fff;background:url('../images/icon_subNavArrow.png') no-repeat 95% 16px;}
+#containerNav .navLeft > li > a i {color:#eaeaea; margin-top:14px; float:right; font-size:0.8em; font-weight:lighter}
+#containerNav .navLeft > li.subHome{min-width:40px !important; }
+#containerNav .navLeft > li.subHome a {display:block; width:100%; height:40px; line-height:40px; padding:0; text-align:center; background:none; }
+#containerNav .navLeft > li.subHome a i {float:none}
+#containerNav .navLeft > li > ul{display:none;position:absolute;top:41px;left:0;right:0;margin:0; padding:0; background:#fff;border:1px solid #f6f6f6; z-index:18;}
+#containerNav .navLeft > li.active > ul{display:block;}
+#containerNav .navLeft > li > ul > li{display:block;background-color:#f6f6f6;margin-top:1px;}
+#containerNav .navLeft > li > ul > li > a{display:block;padding:10px 30px 10px 10px;}
+
+#containerNav .mobileDeaph3{display:none;margin-bottom:0;}
+
+	@media all and (max-width:768px){
+		#containerNav .navLeft {width:100%}
+		#containerNav .navLeft > li.subHome {display:none;}
+		#containerNav .navLeft > li {min-width:31%}
+	}
+
+	@media all and (max-width:567px){
+		#containerNav li.deaph3 {display:none}
+		#containerNav .navLeft > li {min-width:48%}
+	}
+
+
+
+
+/* ¼­ºê ÄÜÅÙÃ÷ ·¹ÀÌ¾Æ¿ô */
+.sub_menu_wrap {position:relative; float:left; width:235px; margin:40px 40px 0 0; z-index:9;}
+	.sub_menu {width:100%; margin:0 0 20px; background-color:#fff; }
+		.sub_menu_top {display:block; width:100%; height:112px; padding:40px 0; text-align:center;background:url('../images/bg_sub_menu_top.gif') repeat left top;}
+		.sub_menu_top p {display:block;font-size:22px; line-height:26px; color:#ffff; letter-spacing:-0.04em; font-weight:500; margin:0; padding:0; }
+
+		.sub_menu > ul {padding:0; padding-bottom:40px; border:1px solid #d0d0d0; border-top:none;}
+		.sub_menu > ul > li {border-bottom:1px solid #d5d5d5}
+		.sub_menu > ul > li .title a {display:block; width:100%;height:56px; padding-left:20px; line-height:56px; color:#666; font-size:16px;}
+		.sub_menu > ul > li .title a:hover {background-color:#054482; color:#fff; text-decoration:none}
+		.sub_menu > ul > li .title a.on {color:#fff; text-decoration:none; background-color:#054482;}
+		.sub_menu > ul > li > ul {width:100%;padding:15px 10px 15px 20px;background-color:#f5f5f5 }
+		.sub_menu > ul > li > ul > li {line-height:20px; margin-bottom:4px; }
+		.sub_menu > ul > li > ul > li a {font-size:15px; color:#666}
+		.sub_menu > ul > li > ul > li a:hover {color:#054482}
+		.sub_menu > ul > li > ul > li a.on {color:#054482; font-weight:600; text-decoration:underline}
+		.sub_menu > ul > li > ul > li a:before {content:'- ';}
+
+.sub_content {float:left; width:920px; margin:40px 0 0; padding:0; }
+	.sub_content .position {position:relative; margin:0 0 30px; padding-bottom:5px; border-bottom:1px solid #d0d0d0}
+	.sub_content .position h3 {font-size:2em; font-weight:600; color:#454545; line-height:1.8em;}
+
+	.sub_document {float:left; width:100%; margin:0; padding:0 0 80px;}
+	
+
+@media all and (max-width:1200px) {
+	.sub_menu_wrap {display:none}
+	.sub_content {width:100%; padding:0 20px}
+}
+
+
+
+
