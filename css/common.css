@@ -1,0 +1,162 @@
+@charset "utf-8";
+@import url(../nanumgothic/nanumgothic.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  line-height: normal;
+  *word-break: break-all;
+  word-break: break-all;
+  -webkit-overflow-scrolling: touch;
+}
+/* body {
+  font-size: 0.74em;
+} */
+header,
+article,
+section,
+nav,
+aside,
+footer {
+  display: block;
+}
+img,
+fieldset,
+iframe,
+button {
+  border: 0 none;
+}
+ul,
+ol,
+li{
+  list-style: none;
+  padding: 0;
+    margin: 0
+}
+input,
+select,
+button {
+  vertical-align: middle;
+}
+img {
+  vertical-align: top;
+}
+i,
+em,
+address {
+  font-style: normal;
+}
+label,
+button {
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+}
+a,
+button,
+input {
+  /* border: 0 none;
+  outline: none; */
+}
+a:active,
+button:active {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+a:link,
+a:active,
+a:visited {
+  color: #666;
+}
+a:hover {
+  color: #b40c0c;
+}
+legend {
+  *width: 0;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  position: absolute;
+  z-index: -1;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  text-align: center;
+}
+caption {
+	overflow: hidden;
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	text-indent: -5000px;
+}
+th {
+  text-align: center;
+}
+input::-ms-clear {
+  display: none;
+}
+input,
+button {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+pre {
+  white-space: pre-line;
+  background-color: #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  overflow-y: auto;
+}
+textarea {
+  resize: none;
+}
+figure {
+  text-align: center;
+}
+hr {
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #ccc;
+  margin: 1em 0;
+}
+/* option */
+.clear-fix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.ir,
+.inner-ir > a {
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.ui-tooltip {
+  -moz-box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3);
+  margin-top: -10px;
+}
+.ui-tooltip.ui-widget-content {
+  border: 0;
+  background-color: #000;
+  background-image: none;
+}
+.ui-tooltip .ui-tooltip-content {
+  color: #fff;
+  font-size: 0.8em;
+}
