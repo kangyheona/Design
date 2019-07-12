@@ -1,35 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="UTF-8">
-    <title>page</title>
-    <style>
-        .grid {
-            width: 1600px;
-            margin: 0 auto;
-            display: grid;
-            grid-gap: 30px;
-            grid-auto-rows: minmax(100px, auto);
-            grid-row-start: span 2;
-            color: #fff;
-        }
-        .grid div{
-            background: black;}
-        @media screen and (max-width: 800px) { .grid div { grid-template-columns: repeat(6, 1fr); grid-gap: 2px; } }
-    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Active Slide - fullPage.js</title>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <!--    <link rel="stylesheet" type="text/css" href="css/examples.css" />-->
+    <link rel="stylesheet" type="text/css" href="font/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/examples.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 </head>
 
 <body>
-    <div class="grid">
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
-        <div>1</div>
+    <div class="wrap">
+        <div id="fullpage">
+            <div class="section active" id="section1">
+                1
+            </div>
+            <div class="section" id="section2">
+                2
+            </div>
+            <div class="section" id="section3">
+                3
+            </div>
+            <div class="section" id="section4">
+                4
+            </div>
+        </div>
+        <footer>
+            푸터
+        </footer>
+
     </div>
+
+    <div id="menu" style="margin-top: -468.5px;">
+        <ul>
+            <li data-menuanchor="firstPage">
+                <a href="#firstPage">
+                    <span></span>
+                </a>
+                <div class="fp-tooltip right">MAIN</div>
+            </li>
+            <li data-menuanchor="secondPage">
+                <a href="#secondPage">
+                    <span></span>
+                </a>
+                <div class="fp-tooltip right">WORK</div>
+            </li>
+            <li data-menuanchor="3rdPage">
+                <a href="#3rdPage">
+                    <span></span>
+                </a>
+                <div class="fp-tooltip right">INTRODUCE</div>
+            </li>
+            <li data-menuanchor="4thpage">
+                <a href="#4thpage" class="">
+                    <span></span>
+                </a>
+                <div class="fp-tooltip right">SNS</div>
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionColor: ['#ccc', '#4bbfc3', '#7baabe', '#ccddff'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            menu: '#menu',
+            lazyLoad: true
+        });
+    </script>
 </body>
 
 </html>
