@@ -1,9 +1,55 @@
 @charset "utf-8";
 
-
-html, body {height:100%;}
-body{font-family:"NanumGothic",  "dotum", "gulim", Arial,sans-serif; font-weight:normal;color:#666;font-size:14px; letter-spacing:-0.01em; }
-body,div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,select,blockquote,button,address{ margin:0; padding:0; line-height:27px; }
+/* Noto Sans KR (korean) http://www.google.com/fonts/earlyaccess */
+ 
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url(/fonts/NotoSansKr/NotoSansKR-Thin.woff2) format('woff2'),
+       url(/fonts/NotoSansKr/NotoSansKR-Thin.woff) format('woff'),
+       url(/fonts/NotoSansKr/NotoSansKR-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url(/fonts/NotoSansKr/NotoSansKR-Light.woff2) format('woff2'),
+       url(/fonts/NotoSansKr/NotoSansKR-Light.woff) format('woff'),
+       url(/fonts/NotoSansKr/NotoSansKR-Light.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   src: url(/fonts/NotoSansKr/NotoSansKR-Regular.woff2) format('woff2'),
+        url(/fonts/NotoSansKr/NotoSansKR-Regular.woff) format('woff'),
+        url(/fonts/NotoSansKr/NotoSansKR-Regular.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 500;
+   src: url(/fonts/NotoSansKr/NotoSansKR-Medium.woff2) format('woff2'),
+        url(/fonts/NotoSansKr/NotoSansKR-Medium.woff) format('woff'),
+        url(/fonts/NotoSansKr/NotoSansKR-Medium.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 700;
+   src: url(/fonts/NotoSansKr/NotoSansKR-Bold.woff2) format('woff2'),
+        url(/fonts/NotoSansKr/NotoSansKR-Bold.woff) format('woff'),
+        url(/fonts/NotoSansKr/NotoSansKR-Bold.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 900;
+   src: url(/fonts/NotoSansKr/NotoSansKR-Black.woff2) format('woff2'),
+        url(/fonts/NotoSansKr/NotoSansKR-Black.woff) format('woff'),
+        url(/fonts/NotoSansKr/NotoSansKR-Black.otf) format('opentype');
+ } 
 
 
 /* input */
@@ -39,7 +85,7 @@ fieldset,form,label,legend,table,
 caption,tbody,tfoot,thead,tr,th,td,
 article,aside,canvas,details,embed,figure, 
 figcaption,footer,header,hgroup,
-menu,nav,output,ruby,section,summary,time,mark,audio,video{letter-spacing: -0.02rem; font-family: "Spoqa Han Sans", "Titillium Web", "Nanum Barun Gothic", Dotum, "Open Sans", Tahoma, Verdana, AppleGothic,sans-serif;margin:0;padding:0;border:0; }
+menu,nav,output,ruby,section,summary,time,mark,audio,video{letter-spacing: -0.02rem; font-family: "Noto Sans KR", Dotum, "Open Sans", Tahoma, Verdana, AppleGothic,sans-serif;margin:0;padding:0;border:0; font-weight: 300}
 
 
 p,span,a{ font-weight:inherit; }
