@@ -1,0 +1,206 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'The-JamsilLight';
+  font-style: normal;
+  src: url('../fonts/The-Jamsil-OTF-2-Light.woff') format('woff'),
+}
+@font-face {
+  font-family: 'The-JamsilRegular';
+  font-style: normal;
+  src: url('../fonts/The-Jamsil-OTF-3-Regular.woff') format('woff'),
+}
+@font-face {
+  font-family: 'TheJamsil5Bold';
+  font-style: normal;
+  src: url('../fonts/TheJamsil5Bold.woff2') format('woff2'),
+}
+body{
+	font-family: The-JamsilLight;
+}
+
+/*****************************
+
+	top
+
+*****************************/
+
+.top{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+	width: 100%;
+	padding: 10% 0;
+}
+.top h1{
+	font-family: The-JamsilRegular;
+	font-size: 100px;
+}
+.title {
+  /*text-align: center;
+  font-size: 12vmin;
+  font-weight: 700;
+  animation: netflix_style 3.5s infinite;
+  outline: none;
+  white-space: nowrap;*/
+  color:#fff;
+}
+.contact{
+	width: 40%;
+	margin: 0 auto;
+	background: rgba(255,255,255,0.2);
+	padding: 1% 0;
+	border-radius: 10px;
+}
+.contact i{
+	padding-right: 10px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+	.contact{
+		width: 50%;
+		font-size: 14px;
+	}
+	.top h1{
+		font-size: 80px;
+		transition-property: font-size;
+        transition-duration: 2s, 2s;
+	}
+	.top h2{
+		font-size: 30px;
+		transition-property: font-size;
+        transition-duration: 2s, 2s;
+	}
+}
+@media (max-width: 1000px){
+	.contact{
+		width: 60%;
+	}
+}
+@media (max-width: 840px) {
+	.contact{
+		width: 80%;
+		display: block
+	}
+	.top h1{
+		font-size: 60px;
+		transition-property: font-size;
+        transition-duration: 2s, 2s;
+	}
+	.top h2{
+		font-size: 20px;
+		transition-property: font-size;
+        transition-duration: 2s, 2s;
+	}
+}
+
+/*****************************
+
+	skill
+
+*****************************/
+
+.skill{
+	background: #EFEFEF;
+	padding: 5% 0 7% 0;
+}
+.skill h2{
+	font-weight: bold;
+	padding-bottom: 5%;
+}
+.skill h3{
+	font-size: 24px;
+	padding-top: 10px;
+}
+.skillInfo .col .skillbox{
+	background: #fff;
+	box-shadow: 5px 5px 5px 5px #E7E7E7;
+	padding: 15% 0 5% 0;
+	border-radius: 10px;
+}
+.skillInfo .col img{
+	width: 80px;
+}
+
+@media (max-width: 1200px) {
+	.skill{
+		float: left;
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	.skillInfo{
+		display: block;
+	}
+	.skillInfo > .col{
+		width: 50%;
+		max-width: 50%;
+		float: left;
+	}
+	.skillInfo .skillbox{
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 640px) {
+	.skillInfo .col img{
+		width: 60px;
+	}
+	.skill h3{
+		font-size: 20px;
+	}
+	.skill p{
+		font-size: 14px;
+	}
+}
+
+/*****************************
+
+	main
+
+*****************************/
+
+.main h2{
+	padding: 5% 0 7% 0;
+	font-weight: bold;
+}
+.work{
+	padding-bottom: 5%;
+}
+.workInfo{
+	transition-property: opacity, background-color;
+      transition-duration: 1s;
+}
+
+.workInfo:hover{
+	background: #fff;
+	opacity: 0.3;
+}
+.mb{
+	display: none;
+}
+
+@media (max-width: 1200px) {
+	.work{
+		display: block;
+
+	}
+	.pc{
+		display: none;
+	}
+	.mb{
+		display: block;
+	}
+}
+
+
+/**/
