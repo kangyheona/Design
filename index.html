@@ -1,83 +1,227 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kang Yeon ah</title>
-    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
-    <link rel="stylesheet" type="text/css" href="css/all.css" />
-    <link rel="stylesheet" type="text/css" href="css/style2.css" />
-    <script type="text/javascript" src="js/fullpage.js"></script>
-    <script type="text/javascript" src="js/examples.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
-    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>강연아 포트폴리오</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/bb1f0730bc.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <dl id="accessibility">
-        <dt class="skip">바로가기 메뉴</dt>
-        <dd><a href="#main_container">본문 바로가기</a></dd>
-    </dl>
-    <div class="wrap">
-        <div id="fullpage">
-            <div class="section active" id="section1">
-                1
-            </div>
-            <div class="section" id="section2">
-                2
-            </div>
-            <div class="section" id="section3">
-                3
-            </div>
-            <div class="section" id="section4">
-                4
-            </div>
-        </div>
-        <footer>
-            푸터
-        </footer>
+	<!-- top -->
+	<div class="top">
+		<div class="title container text-center">
+			<h1>포트폴리오</h1>
+			<h2>강연아 웹 디자이너, 웹 퍼블리셔</h2>
+			<div class="row contact">
+				<div class="col"><i class="fa-solid fa-phone"></i><span>010-4746-9618</span></div>
+				<div class="col">
+                    <i class="fa-solid fa-envelope"></i><span>kya2038@nate.com</span>
+                    </div>
+			</div>
+		</div>
+	</div>
 
-    </div>
+	<!-- skill -->
+	<div class="skill">
+		<div class="container text-center">
+			<h2>Skill</h2>
+			<div class="row skillInfo">
+				<div class="col">
+					<div class="skillbox">
+					<img src="images/ps_icon.png" alt="photoshop">
+					<h3>Photoshop</h3>
+					<p>2d 이미지 보정 및 합성</p>
+					</div>
+				</div>
+				<div class="col">
+					<div class="skillbox">
+					<img src="images/ai_icon.png" alt="illustrator">
+					<h3>Illustrator</h3>
+					<p>아이콘 제작 가능</p>
+				</div>
+				</div>
+				<div class="col">
+					<div class="skillbox">
+					<img src="images/ht_icon.png" alt="html,css">
+					<h3>html,css</h3>
+					<p>웹페이지 퍼블리싱</p>
+				</div>
+				</div>
+				<div class="col">
+					<div class="skillbox">
+					<img src="images/pp_icon.png" alt="powerpoint">
+					<h3>Powerpoint</h3>
+					<p>문서 작성 및 디자인</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <div id="menu" style="margin-top: -468.5px;">
-        <ul>
-            <li data-menuanchor="firstPage">
-                <a href="#firstPage">
-                    <span></span>
-                </a>
-                <div class="fp-tooltip right">MAIN</div>
-            </li>
-            <li data-menuanchor="secondPage">
-                <a href="#secondPage">
-                    <span></span>
-                </a>
-                <div class="fp-tooltip right">WORK</div>
-            </li>
-            <li data-menuanchor="3rdPage">
-                <a href="#3rdPage">
-                    <span></span>
-                </a>
-                <div class="fp-tooltip right">INTRODUCE</div>
-            </li>
-            <li data-menuanchor="4thpage">
-                <a href="#4thpage" class="">
-                    <span></span>
-                </a>
-                <div class="fp-tooltip right">SNS</div>
-            </li>
-        </ul>
-    </div>
+	<!-- main -->
+	<div class="container text-center main">
+		<h2>Work</h2>
+		<div class="row work">
+	  	<div class="col">
+	      <!-- Button trigger modal -->
+			<a type="button" data-bs-toggle="modal" data-bs-target="#workPic1" class="workInfo">
+			  <img src="images/work1.png" class="img-fluid pc" alt="">
+			  <img src="images/work1_mb.png" class="img-fluid mb" alt="">
+			</a>
 
-    <script type="text/javascript">
-        var myFullpage = new fullpage('#fullpage', {
-            sectionColor: ['#ccc', '#4bbfc3', '#7baabe', '#ccddff'],
-            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-            menu: '#menu',
-            lazyLoad: true
-        });
-    </script>
+			<!-- Modal -->
+			<div class="modal fade" id="workPic1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h1 class="modal-title fs-5" id="exampleModalLabel">상세페이지1</h1>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <img src="images/workPic1.jpg" class="img-fluid" alt="">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	    </div>
+
+	    <div class="col">
+	      <!-- Button trigger modal -->
+			<a type="button" data-bs-toggle="modal" data-bs-target="#workPic2" class="workInfo">
+			  <img src="images/work2.png" class="img-fluid pc" alt="">
+			  <img src="images/work2_mb.png" class="img-fluid mb" alt="">
+			</a>
+
+			<!-- Modal -->
+			<div class="modal fade" id="workPic2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h1 class="modal-title fs-5" id="exampleModalLabel">상세페이지2</h1>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <img src="images/workPic2.jpg" class="img-fluid" alt="">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	    </div>
+	    
+	    <div class="col">
+	      <!-- Button trigger modal -->
+			<a type="button" data-bs-toggle="modal" data-bs-target="#workPic3" class="workInfo">
+			  <img src="images/work3.png" class="img-fluid pc" alt="">
+			  <img src="images/work3_mb.png" class="img-fluid mb" alt="">
+			</a>
+
+			<!-- Modal -->
+			<div class="modal fade" id="workPic3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h1 class="modal-title fs-5" id="exampleModalLabel">상세페이지3</h1>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <img src="images/workPic3.jpg" class="img-fluid" alt="">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	    </div>
+	  </div>
+	  <div class="row work">
+	  	<div class="col">
+	      <!-- Button trigger modal -->
+			<a type="button" data-bs-toggle="modal" data-bs-target="#workPic4" class="workInfo">
+			  <img src="images/work4.png" class="img-fluid pc" alt="">
+			  <img src="images/work4_mb.png" class="img-fluid mb" alt="">
+			</a>
+
+			<!-- Modal -->
+			<div class="modal fade" id="workPic4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h1 class="modal-title fs-5" id="exampleModalLabel">상세페이지4</h1>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <img src="images/workPic4.jpg" class="img-fluid" alt="">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	    </div>
+
+	    <div class="col">
+	      <!-- Button trigger modal -->
+			<a type="button" data-bs-toggle="modal" data-bs-target="#workPic5" class="workInfo">
+			  <img src="images/work5.png" class="img-fluid pc" alt="">
+			  <img src="images/work5_mb.png" class="img-fluid mb" alt="">
+			</a>
+
+			<!-- Modal -->
+			<div class="modal fade" id="workPic5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h1 class="modal-title fs-5" id="exampleModalLabel">상세페이지5</h1>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <img src="images/workPic5.jpg" class="img-fluid" alt="">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	    </div>
+
+	    <div class="col">
+	      <!-- Button trigger modal -->
+			<a type="button" data-bs-toggle="modal" data-bs-target="#workPic6" class="workInfo">
+			  <img src="images/work6.png" class="img-fluid pc" alt="">
+			  <img src="images/work6_mb.png" class="img-fluid mb" alt="">
+			</a>
+
+			<!-- Modal -->
+			<div class="modal fade" id="workPic6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h1 class="modal-title fs-5" id="exampleModalLabel">전단</h1>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <img src="images/workPic6.jpg" class="img-fluid" alt="">
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	    </div>
+	  </div>
+	</div>
 </body>
-
 </html>
